@@ -22,9 +22,21 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  title: {
-    
-  }
+    title: {
+    fontSize: 36,
+    color: ' ',
+    marginBottom: 24,
+    textAlign: 'center',
+  },
+
+  text: {
+    fontSize: 36,
+    color: ' ',
+    marginBottom: 24,
+    textAlign: 'center',
+
+  },
+
 });
 
 
