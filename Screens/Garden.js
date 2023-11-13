@@ -9,7 +9,7 @@ export default function App() {
       <SafeAreaView style={styles.container}>
         <View style={styles.background}>
         
-          <Text style={styles.title}>Cooking</Text>
+          <Text style={styles.title}>Garden Maintenance</Text>
 
           
 

@@ -1,48 +1,82 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}> Six-Week Courses</Text>
+    <ScrollView>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.background}>
+        
+          <Text style={styles.title}>Six-Week Courses</Text>
 
+          <Image
+            source={require(' ')} // Replace with the actual path to your image
+            style={styles.image}
+          />
 
-      <Text style={styles.text}>Child Minding </Text>
+          <Text style={styles.text}>Child Minding</Text>
 
+          <Image
+            source={require(' ')} // Replace with the actual path to your image
+            style={styles.image}
+          />
 
-      <Text style={styles.text}>Cooking</Text>
+          <Text style={styles.text}>Cooking</Text>
 
+          <Image
+            source={require(' ')} // Replace with the actual path to your image
+            style={styles.image}
+          />
 
-      <Text style={styles.text}>Garden Maintanance</Text>
+          <Text style={styles.text}>Garden Maintenance</Text>
 
+          <Image
+            source={require(' ')} // Replace with the actual path to your image
+            style={styles.image}
+          />
 
-      <StatusBar style="auto" />
-    </View>
-    
+          <StatusBar style="auto" />
+        </View>
+      </SafeAreaView>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '5E280B',
+    backgroundColor: '#5E280B',
     alignItems: 'center',
     justifyContent: 'center',
   },
-    title: {
+  title: {
     fontSize: 36,
-    color: 'CEA792',
+    color: '#CEA792',
     marginBottom: 24,
     textAlign: 'center',
   },
 
   text: {
-    fontSize: 36,
-    color: 'CEA792',
+    fontSize: 24,
+    color: '#CEA792',
     marginBottom: 24,
     textAlign: 'center',
 
   },
+  background: {
+    width: width,
+    height: height,
+  },
+
+  image: {
+    width: 200, // Set the width of the image
+    height: 200, // Set the height of the image
+    resizeMode: ' ', // Choose the resizeMode as per your requirement
+    marginBottom: 24,
+  },
+
 
 });
 
