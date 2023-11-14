@@ -1,60 +1,124 @@
-import React from 'react';
-import { StatusBar, TouchableOpacity, ScrollView, SafeAreaView, StyleSheet, Text, View, Image } from 'react-native';
-{
+import { StatusBar } from 'expo-status-bar';
+import { SafeAreaView, StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
+
+const { width, height } = Dimensions.get('window');
+
+export default function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
-        <Text style={styles.title}>Six Month Courses</Text>
+    <ScrollView>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.background}>
+        
+          <Text style={styles.title}>Six Months Courses</Text>
 
-        <Text style={styles.text}>First Aid</Text>
-        <Image
-          source={require('path_to_your_first_aid_image')} // Replace with the actual path to your image
-          style={styles.image}
-        />
-        <TouchableOpacity onPress={handleReadMore}>
-          <View style={styles.button}>
-            <Text style={styles.btnText}>Read More</Text>
-          </View>
-        </TouchableOpacity>
+          <Image
+            source={require('')} 
+            style={styles.image}
+          />
 
-        <Text style={styles.text}>Sewing</Text>
-        <Image
-          source={require('')} // Replace with the actual path to your image
-          style={styles.image}
-        />
-        <TouchableOpacity onPress={handleReadMore}>
-          <View style={styles.button}>
-            <Text style={styles.btnText}>Read More</Text>
-          </View>
-        </TouchableOpacity>
+          <Text style={styles.text}>First Aid</Text>
 
-        <Text style={styles.text}>Landscaping</Text>
-        <Image
-          source={require('')} // Replace with the actual path to your image
-          style={styles.image}
-        />
-        <TouchableOpacity onPress={handleReadMore}>
-          <View style={styles.button}>
-            <Text style={styles.btnText}>Read More</Text>
-          </View>
-        </TouchableOpacity>
+          <Image
+            source={require(' ')}
+            style={styles.image}
+          />
+                    <TouchableOpacity onPress={handleReadMore}>
+            <View style={styles.button}>
+              <Text style={styles.btnText}>Read More</Text>
+            </View>
+          </TouchableOpacity>
 
-        <Text style={styles.text}>Life Skills</Text>
-        <Image
-          source={require('')} // Replace with the actual path to your image
-          style={styles.image}
-        />
-        <TouchableOpacity onPress={handleReadMore}>
-          <View style={styles.button}>
-            <Text style={styles.btnText}>Read More</Text>
-          </View>
-        </TouchableOpacity>
+          <Text style={styles.text}>Sewing</Text>
 
-        <StatusBar style="auto" />
-      </ScrollView>
-    </SafeAreaView>
+          <Image
+            source={require(' ')} 
+          />
+                    <TouchableOpacity onPress={handleReadMore}>
+            <View style={styles.button}>
+              <Text style={styles.btnText}>Read More </Text>
+            </View>
+          </TouchableOpacity>
+
+          <Text style={styles.text}>Landscaping</Text>
+
+          <Image
+            source={require(' ')} 
+            style={styles.image}
+          />
+          <TouchableOpacity onPress={handleReadMore}>
+           <View style={styles.button}>
+               <Text style={styles.btnText}>Read More</Text>
+            </View>
+          </TouchableOpacity>
+
+           <Text style={styles.text}>Life Skills</Text>
+
+          <Image
+            source={require(' ')} 
+            style={styles.image}
+          />
+          <TouchableOpacity onPress={handleReadMore}>
+           <View style={styles.button}>
+               <Text style={styles.btnText}>Read More</Text>
+            </View>
+          </TouchableOpacity>
+          <StatusBar style="auto" />
+        </View>
+      </SafeAreaView>
+    </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#5E280B',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  title: {
+    fontSize: 36,
+    color: '#CEA792',
+    marginBottom: 24,
+    textAlign: 'center',
+  },
+
+  text: {
+    fontSize: 24,
+    color: '#CEA792',
+    marginBottom: 24,
+    textAlign: 'center',
+
+  },
+  background: {
+    width: width,
+    height: height,
+  },
+
+  image: {
+    width: 200, 
+    height: 200, 
+    resizeMode: ' ', 
+    marginBottom: 24,
+  },
+
+  btnText: {
+    fontSize: 24,
+    color: '#C8A2C8',
+    fontWeight: '700',
+  },
+
+  button: {
+    padding: 16,
+    backgroundColor: 'black',
+    alignItems: 'center',
+    borderRadius: 12,
+    marginTop: 20,
+    marginBottom: 20,
+  },
+
+
+});
 
 
 
