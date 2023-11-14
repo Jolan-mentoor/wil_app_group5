@@ -12,7 +12,7 @@ export default function App() {
           <Text style={styles.title}>Six-Week Courses</Text>
 
           <Image
-            source={require(' ')} // Replace with the actual path to your image
+            source={require('')} // Replace with the actual path to your image
             style={styles.image}
           />
 
