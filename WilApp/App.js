@@ -19,27 +19,33 @@ function HomeScreen() {
                    more empowered future for all.{'\n'} Together, let's unleash the potential within ourselves and our nation.</Text></View>
   <View><Text style={styles.Text3}>At Empowering the Nation, we provide skill training for domestic workers and gardeners, helping them upskill themselves to become more marketable when seeking employment or pursuing entrepreneurship. Additionally, we offer courses tailored for elders and members of the community, enabling them to enhance their skills and stay competitive in the job market. Our goal is to support individuals in their journey towards personal and professional development, ultimately contributing to the overall progress of our nation."
                   </Text></View>
-  <View><Text style={styles.Text4}></Text></View>
-  <View><Text style={styles.Text5}></Text></View>
-  <View><Text style={styles.Text6}></Text></View>
-  <View><Text style={styles.Text7}>Total number of pages read{'\n'} across all the books ever entered:</Text></View>
+   {/* <View><Text style={styles.Text4}></Text></View>
+  <View><Text style={styles.Text5}></Text></View> */}
+  <View><Text style={styles.Text6}> Our courses</Text></View> 
+  <Image style={styles.background2} 
+          source={require('./assets/img/success.png')}
+          resizeMode="cover"
+          /> 
   <TouchableOpacity>
     <View style={styles.button2}>
-      <Text style={styles.btnText2}>Total</Text>
+      <Text style={styles.btnText2}>Six Months</Text>
      </View>
   </TouchableOpacity>
-  <Text style={styles.Text8}>Average number of pages{'\n'} in the books read by you:</Text>
+  <Image style={styles.background3} 
+          source={require('./assets/img/helping-each-other-.jpg')}
+          resizeMode="cover"
+          />
   <TouchableOpacity>
     <View style={styles.button3}>
-      <Text style={styles.btnText3}>Average</Text>
+      <Text style={styles.btnText3}>Six Weeks</Text>
     </View>
   </TouchableOpacity>
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <View style={styles.button}>
             <Text style={styles.btnText}>Continue</Text>
           </View>
   
-        </TouchableOpacity>
+        </TouchableOpacity> */}
   </View>
   
   
@@ -97,6 +103,23 @@ const styles = StyleSheet.create({
     width: width,
     height: height,
    
+  },
+
+  background2:{
+    top: 0,
+    left: 0,
+    width:150,
+    height:125,
+    borderRadius:100,
+    marginBottom:50,
+  },
+
+  background3:{
+    top: 0,
+    left: 0,
+    width:150,
+    height:125,
+    borderRadius:100,
   },
 //IIE,2023//
   overflow:{
@@ -187,11 +210,12 @@ const styles = StyleSheet.create({
   },
 
   Text6:{
-    fontSize: 15,
+    fontSize: 30,
     color:'#D5b195',
-      marginBottom: 50,
-      marginTop: -30,
+      marginBottom: 40,
+      marginTop: -100,
     padding: 2,
+    marginLeft: 110,
 
   },
   Text7:{
@@ -214,7 +238,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginBottom:15,
     marginLeft:250,
-    marginTop:-50,
+    marginTop:-130,
   },
 
   button3:{
@@ -224,7 +248,7 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginBottom:5,
     marginLeft:250,
-    marginTop: -50,
+    marginTop: -90,
   },
 
   btnText2:{
