@@ -2,93 +2,91 @@ import react from 'react';
 import { Text, View, StyleSheet,width,height,SafeAreaView,Image,TouchableOpacity,ScrollView } from "react-native";
 
 
-function ChildMindingScreen() {
+function ChildmindingScreen() {
     return (
-      <ScrollView>
-      <SafeAreaView style={styles.container}>
-      {<Image style={styles.background} 
-          source={require('../assets/img/nav.jpg')}
-          resizeMode="cover"
-          /> }
-    <View style={[styles.background, styles.overflow]} />
-  <View style={styles.content}>
-  <View><Text style={styles.title2}>Book your{'\n'}Course now!!!</Text></View>
-  <View><Text style={styles.Text13}>Choose your Course:</Text></View>
-    {/* <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View> */}
-  {/* <View><Text style={styles.Text5}></Text></View> 
-  <View><Text style={styles.Text6}> </Text></View>  */}
-  
-  <Image style={styles.background2} 
-          source={require('../assets/img/firstaid/firstaid.jpg')}
-          resizeMode="cover"
-          /> 
-  <TouchableOpacity>
-    <View style={styles.button2}>
-      <Text style={styles.btnText2}>First Aid</Text>
-     </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/learning.jpg')}
-          resizeMode="cover"
-          />
-  <TouchableOpacity>
-    <View style={styles.button3}>
-      <Text style={styles.btnText3}>Life Skills</Text>
-    </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/sewing.png')}
-          resizeMode="cover"
-          />
-          <TouchableOpacity>
-    <View style={styles.button4}>
-      <Text style={styles.btnText3}>Sewing</Text>
-    </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/garden.png')}
-          resizeMode="cover"
-          />
-           <TouchableOpacity>
-    <View style={styles.button5}>
-      <Text style={styles.btnText3}>LandScaping</Text>
-    </View>
-  </TouchableOpacity>
+        <ScrollView>
+        <SafeAreaView style={styles.container}>
+        {<Image style={styles.background} 
+            source={require('../assets/img/nav.jpg')}
+            resizeMode="cover"
+            /> }
+      <View style={[styles.background, styles.overflow]} />
+    <View style={styles.content}>
+    <View><Text style={styles.title2}>Our{'\n'}Child Minding{'\n'}Course</Text></View>
+    <View><Text style={styles.Text14}>This course provide basic knowledge of watering, pruning and planting in a domestic garden:</Text></View>
+      {/* <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View> */}
+    {/* <View><Text style={styles.Text5}></Text></View> 
+    <View><Text style={styles.Text6}> </Text></View>  */}
+    
+    <Image style={styles.background4} 
+            source={require('../assets/img/ChildMinding/to-learn.jpg')}
+            resizeMode="cover"
+            /> 
+    <TouchableOpacity>
+      <View style={styles.button6}>
+        <Text style={styles.btnText2}>
+birth to six-month old baby needs
 
-  <Image style={styles.background3} 
-          source={require('../assets/img//Landscaping/garden.jpg')}
-          resizeMode="cover"
-          />
-           <TouchableOpacity>
-    <View style={styles.button5}>
-      <Text style={styles.btnText3}>Garden Maintance</Text>
-    </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/ChildMinding/child.jpg')}
-          resizeMode="cover"
-          />
-           <TouchableOpacity>
-    <View style={styles.button5}>
-      <Text style={styles.btnText3}>Childminding</Text>
-    </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/cooking.jpg')}
-          resizeMode="cover"
-          />
-           <TouchableOpacity>
-    <View style={styles.button5}>
-      <Text style={styles.btnText3}>Cooking</Text>
-    </View>
-  </TouchableOpacity>
-        
-  </View>
+</Text>
+       </View>
+    </TouchableOpacity>
+    <Image style={styles.background4} 
+            source={require('../assets/img/ChildMinding/imagination.jpg')}
+            resizeMode="cover"
+            />
+    <TouchableOpacity>
+      <View style={styles.button6}>
+        <Text style={styles.btnText3}>
+        Toddler needs</Text>
+      </View>
+    </TouchableOpacity>
+    <Image style={styles.background4} 
+            source={require('../assets/img/ChildMinding/infant.jpg')}
+            resizeMode="cover"
+            />
+            <TouchableOpacity>
+      <View style={styles.button6}>
+        <Text style={styles.btnText3}>seven-month to one year old needs
+
+</Text>
+      </View>
+    </TouchableOpacity>
+    <Image style={styles.background4} 
+            source={require('../assets/img/ChildMinding/person.jpg')}
+            resizeMode="cover"
+            />
+             <TouchableOpacity>
+      <View style={styles.button6}>
+        <Text style={styles.btnText3}>Educational toys
+
+</Text>
+      </View>
+    </TouchableOpacity>
   
-  
-      </SafeAreaView>
-      </ScrollView>
-    );
+    <Image style={styles.background4} 
+            source={require('../assets/img/ChildMinding/imagination.jpg')}
+            resizeMode="cover"
+            />
+             <TouchableOpacity>
+      <View style={styles.button6}>
+        <Text style={styles.btnText3}>teaching</Text>
+      </View>
+    </TouchableOpacity>
+    <Image style={styles.background5} 
+            source={require('../assets/img/ChildMinding/child.jpg')}
+            resizeMode="cover"
+            />
+             <TouchableOpacity>
+      <View style={styles.button7}>
+        <Text style={styles.btnText4}>Book Now!!</Text>
+      </View>
+    </TouchableOpacity>     
+    </View>
+    
+    
+        </SafeAreaView>
+        </ScrollView>
+      );
   }
   const styles = StyleSheet.create({
     container: {
@@ -120,6 +118,24 @@ function ChildMindingScreen() {
       width:150,
       height:125,
       borderRadius:100,
+      marginBottom:50,
+    },
+
+    background4:{
+      top: 0,
+      left: 0,
+      width:120,
+      height:120,
+      borderRadius:100,
+      marginBottom:50,
+    },
+
+    background5:{
+      top: 0,
+      left: 0,
+      width:150,
+      height:150,
+      // borderRadius:100,
       marginBottom:50,
     },
   //IIE,2023//
@@ -215,7 +231,7 @@ function ChildMindingScreen() {
   
     Text5:{
       fontSize: 15,
-      color:'#D5b195',
+      color:'#CEA792',
        marginBottom: 80,
        marginTop: -70,
       padding: 2,
@@ -224,7 +240,7 @@ function ChildMindingScreen() {
   
     Text6:{
       fontSize: 35,
-      color:'#D5b195',
+      color:'#CEA792',
         marginBottom: 100,
         marginTop: -80,
       padding: 2,
@@ -233,14 +249,14 @@ function ChildMindingScreen() {
     },
     Text7:{
       fontSize: 15,
-      color:'#D5b195',
+      color:'#CEA792',
        marginBottom:15,
        marginTop:-10,
       
     },
     Text8:{
       fontSize: 15,
-      color:'#D5b195',
+      color:'#CEA792',
       marginBottom:5,
     },
     Text9:{
@@ -296,6 +312,39 @@ function ChildMindingScreen() {
       textAlign:'center',
   
     },
+
+    Text14:{
+      fontSize: 15,
+      color:'#CEA792',
+       marginBottom: 50,
+        marginTop: -50,
+      padding: 5,
+      marginLeft:0,
+      textAlign:'center',
+  
+    },
+
+    Text15:{
+      fontSize: 25,
+      color:'#CEA792',
+       marginBottom: 125,
+        marginTop: -70,
+      padding: 5,
+      marginLeft:15,
+      textAlign:'center',
+  
+    },
+
+    Text16:{
+      fontSize: 25,
+      color:'#CEA792',
+       marginBottom: 125,
+        marginTop: -70,
+      padding: 5,
+      marginLeft:15,
+      textAlign:'center',
+  
+    },
   
     button2:{
       padding:16,
@@ -336,21 +385,46 @@ function ChildMindingScreen() {
       marginLeft:250,
       marginTop: -130,
     },
+
+    button6:{
+      padding:16,
+      backgroundColor:'#5E280B',
+      alignItems:'center',
+      borderRadius: 35,
+      marginBottom:5,
+      marginLeft:150,
+      marginTop: -150,
+    },
+
+    button7:{
+      padding:26,
+      backgroundColor:'#8F4F2A',
+      alignItems:'center',
+      // borderRadius: 35,
+      marginBottom:5,
+      marginLeft:250,
+      marginTop: -180,
+    },
   
-  
-    
   
     btnText2:{
       fontSize:15,
-      color:'#D5b195',
+      color:'#CEA792',
       fontWeight:'500',
     },
   
     btnText3:{
       fontSize: 15,
-      color:'#D5b195',
+      color:'#CEA792',
+      fontWeight:'500',
+    },
+
+    btnText4:{
+      fontSize: 25,
+      color:'#CEA792',
       fontWeight:'500',
     },
   
   });
-  export default ChildMindingScreen;
+  
+  export default ChildmindingScreen;
