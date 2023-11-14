@@ -7,10 +7,10 @@ function HomeScreen() {
   return (
       <ScrollView>
       <SafeAreaView style={styles.container}>
-      {/* <Image style={styles.background} 
-          source={require('./assets/img/bg.jpg')}
+      {<Image style={styles.background} 
+          source={require('./assets/img/nav.jpg')}
           resizeMode="cover"
-          /> */}
+          /> }
     <View style={[styles.background, styles.overflow]} />
   <View style={styles.content}>
   <View><Text style={styles.title}>Welcome {'\n'}</Text></View>
@@ -97,11 +97,10 @@ const styles = StyleSheet.create({
   },
 
   background: {
-    position: 'absolute',
+   position: 'absolute',
     top: 0,
     left: 0,
-    width: width,
-    height: height,
+    height: 150,
    
   },
 
@@ -135,7 +134,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 40,
     color:'#CEA792',
-     marginTop: 5,
+     marginTop: 100,
     textAlign: 'center',
     alignItems:'center',
      padding:80,
