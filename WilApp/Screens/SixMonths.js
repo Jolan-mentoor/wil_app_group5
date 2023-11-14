@@ -1,50 +1,64 @@
+import react from 'react';
 import { Text, View, StyleSheet,width,height,SafeAreaView,Image,TouchableOpacity,ScrollView } from "react-native";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { NavigationContainer } from "@react-navigation/native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import BookingScreen from "./Screens/BookingScreen";
-import SixMonthsScreen from "./Screens/SixMonths";
-import SixWeeksScreen from "./Screens/SixWeeks";
-import HomeScreen from "./Screens/Home";
 
-
-
-const Tab = createBottomTabNavigator();
-
-export default function App() {
+function SixMonthsScreen() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ tabBarIcon: makeIconRender("home") ,headerShown:false }}
+    <ScrollView>
+    <SafeAreaView style={styles.container}>
+    {<Image style={styles.background} 
+        source={require('../assets/img/nav.jpg')}
+        resizeMode="cover"
+        /> }
+  <View style={[styles.background, styles.overflow]} />
+<View style={styles.content}>
+<View><Text style={styles.title}>Six-Month{'\n'}Courses</Text></View>
+<View><Text style={styles.Text10}>Embark on a transformative journey with our six-month courses! Designed for comprehensive skill development, these programs offer a unique blend of theory and practical learning.{'\n'} 
+ </Text></View>
+  <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View>
+{/* <View><Text style={styles.Text5}></Text></View> 
+<View><Text style={styles.Text6}> </Text></View>  */}
+<Image style={styles.background2} 
+        source={require('../assets/img/firstaid/firstaid.jpg')}
+        resizeMode="cover"
+        /> 
+<TouchableOpacity>
+  <View style={styles.button2}>
+    <Text style={styles.btnText2}>First Aid</Text>
+   </View>
+</TouchableOpacity>
+<Image style={styles.background3} 
+        source={require('../assets/img/learning.jpg')}
+        resizeMode="cover"
         />
-        <Tab.Screen
-          name="SixMonth"
-          component={SixMonthsScreen}
-          options={{ tabBarIcon: makeIconRender("alpha-s-circle-outline") ,headerShown:false}}
+<TouchableOpacity>
+  <View style={styles.button3}>
+    <Text style={styles.btnText3}>Life Skills</Text>
+  </View>
+</TouchableOpacity>
+<Image style={styles.background3} 
+        source={require('../assets/img/sewing.png')}
+        resizeMode="cover"
         />
+        <TouchableOpacity>
+  <View style={styles.button4}>
+    <Text style={styles.btnText3}>Sewing</Text>
+  </View>
+</TouchableOpacity>
+<Image style={styles.background3} 
+        source={require('../assets/img/garden.png')}
+        resizeMode="cover"
+        />
+         <TouchableOpacity>
+  <View style={styles.button5}>
+    <Text style={styles.btnText3}>LandScaping</Text>
+  </View>
+</TouchableOpacity>
+      
+</View>
 
-        <Tab.Screen
-          name="SixWeek"
-          component={SixWeeksScreen}
-          options={{ tabBarIcon: makeIconRender("alpha-s-circle") ,headerShown:false}}
-        />
 
-      <Tab.Screen
-          name="Booking"
-          component={BookingScreen}
-          options={{ tabBarIcon: makeIconRender("book") ,headerShown:false}}
-        />
-      </Tab.Navigator>
-    </NavigationContainer>
-  );
-}
-
-function makeIconRender(name) {
-  return ({ color, size }) => (
-    <MaterialCommunityIcons name={name} color={color} size={size} />
+    </SafeAreaView>
+    </ScrollView>
   );
 }
 
@@ -298,4 +312,4 @@ const styles = StyleSheet.create({
   },
 
 });
-//IIE,2023 Mobile Application Scripting MAST5112[POE]The inedpendent institute of education:unpublished//
+ export default SixMonthsScreen
