@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View, ScrollView, Dimensions, Image } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View, ScrollView, Dimensions, Image, TouchableOpacity} from 'react-native';
 
 const { width, height } = Dimensions.get('window');
 
@@ -11,9 +11,18 @@ export default function App() {
         
           <Text style={styles.title}>Child Minding </Text>
 
-          
+          <Text style={styles.text}></Text>
 
-          <Text style={styles.text}>Child Minding</Text>
+          <Image
+            source={require(' ')} // Replace with the actual path to your image
+            style={styles.image}
+          />
+
+          <TouchableOpacity onPress={handleBookNow}>
+           <View style={styles.button}>
+               <Text style={styles.btnText}>Book Now</Text>
+            </View>
+          </TouchableOpacity>
 
           
 
