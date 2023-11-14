@@ -2,7 +2,7 @@ import react from 'react';
 import { Text, View, StyleSheet,width,height,SafeAreaView,Image,TouchableOpacity,ScrollView } from "react-native";
 
 
-function LifeskillScreen() {
+function LandscapingScreen() {
     return (
       <ScrollView>
       <SafeAreaView style={styles.container}>
@@ -353,4 +353,5 @@ function LifeskillScreen() {
     },
   
   });
-  export default LifeskillScreen;
+  
+  export default LandscapingScreen;

@@ -36,7 +36,7 @@ function SixWeeksScreen() {
   </View>
 </TouchableOpacity>
 <Image style={styles.background3} 
-        source={require('../assets/img/garden.png')}
+        source={require('../assets/img/Landscaping/garden.jpg')}
         resizeMode="cover"
         />
         <TouchableOpacity>

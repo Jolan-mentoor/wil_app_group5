@@ -1,13 +1,7 @@
-import react, { useState } from 'react';
+import react from 'react';
 import { Text, View, StyleSheet,width,height,SafeAreaView,Image,TouchableOpacity,ScrollView } from "react-native";
 
- const BookingScreen = () =>{
-  const[selectedCourses, setSelectedCourses] = useState([]);
 
-const handleCoursePick = (course) =>{
-  const newSelecetdCourse =
-}
- }
 function BookingScreen() {
     return (
       <ScrollView>
@@ -18,12 +12,12 @@ function BookingScreen() {
           /> }
     <View style={[styles.background, styles.overflow]} />
   <View style={styles.content}>
-  <View><Text style={styles.title}>Six-Month{'\n'}Courses</Text></View>
-  <View><Text style={styles.Text10}> 
-   </Text></View>
-    <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View>
+  <View><Text style={styles.title2}>Book your{'\n'}Course now!!!</Text></View>
+  <View><Text style={styles.Text13}>Choose your Course:</Text></View>
+    {/* <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View> */}
   {/* <View><Text style={styles.Text5}></Text></View> 
   <View><Text style={styles.Text6}> </Text></View>  */}
+  
   <Image style={styles.background2} 
           source={require('../assets/img/firstaid/firstaid.jpg')}
           resizeMode="cover"
@@ -58,6 +52,34 @@ function BookingScreen() {
            <TouchableOpacity>
     <View style={styles.button5}>
       <Text style={styles.btnText3}>LandScaping</Text>
+    </View>
+  </TouchableOpacity>
+
+  <Image style={styles.background3} 
+          source={require('../assets/img//Landscaping/garden.jpg')}
+          resizeMode="cover"
+          />
+           <TouchableOpacity>
+    <View style={styles.button5}>
+      <Text style={styles.btnText3}>Garden Maintance</Text>
+    </View>
+  </TouchableOpacity>
+  <Image style={styles.background3} 
+          source={require('../assets/img/ChildMinding/child.jpg')}
+          resizeMode="cover"
+          />
+           <TouchableOpacity>
+    <View style={styles.button5}>
+      <Text style={styles.btnText3}>Childminding</Text>
+    </View>
+  </TouchableOpacity>
+  <Image style={styles.background3} 
+          source={require('../assets/img/cooking.jpg')}
+          resizeMode="cover"
+          />
+           <TouchableOpacity>
+    <View style={styles.button5}>
+      <Text style={styles.btnText3}>Cooking</Text>
     </View>
   </TouchableOpacity>
         
@@ -132,6 +154,8 @@ function BookingScreen() {
        marginLeft: 30,
     },
   
+
+    
     btnText:{
       fontSize: 24,
       color:'#D5b195',
@@ -261,6 +285,17 @@ function BookingScreen() {
       textAlign:'center',
   
     },
+
+    Text13:{
+      fontSize: 25,
+      color:'#CEA792',
+       marginBottom: 125,
+        marginTop: -70,
+      padding: 5,
+      marginLeft:15,
+      textAlign:'center',
+  
+    },
   
     button2:{
       padding:16,
@@ -318,5 +353,4 @@ function BookingScreen() {
     },
   
   });
-
   export default BookingScreen;
