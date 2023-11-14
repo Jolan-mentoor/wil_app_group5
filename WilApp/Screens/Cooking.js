@@ -19,7 +19,7 @@ function CookingScreen() {
     <View><Text style={styles.Text6}> </Text></View>  */}
     
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/forest.jpg')}
+            source={require('../assets/img/Cooking/frying.jpg')}
             resizeMode="cover"
             /> 
     <TouchableOpacity>
@@ -28,7 +28,7 @@ function CookingScreen() {
        </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/garden.jpg')}
+            source={require('../assets/img/Cooking/vegtables.jpg')}
             resizeMode="cover"
             />
     <TouchableOpacity>
@@ -38,7 +38,7 @@ function CookingScreen() {
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/pavement.jpg')}
+            source={require('../assets/img/Cooking/spices.jpg')}
             resizeMode="cover"
             />
             <TouchableOpacity>
@@ -47,7 +47,7 @@ function CookingScreen() {
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/skills.jpg')}
+            source={require('../assets/img/cooking.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
@@ -59,7 +59,7 @@ function CookingScreen() {
     </TouchableOpacity>
   
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/stream.jpg')}
+            source={require('../assets/img/Cooking/baking.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
@@ -68,7 +68,7 @@ function CookingScreen() {
       </View>
     </TouchableOpacity>
     <Image style={styles.background5} 
-            source={require('../assets/img/Landscaping/nature.jpg')}
+            source={require('../assets/img/cooking.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
@@ -387,7 +387,7 @@ function CookingScreen() {
       alignItems:'center',
       borderRadius: 35,
       marginBottom:5,
-      marginLeft:250,
+      marginLeft:150,
       marginTop: -150,
     },
 

@@ -19,56 +19,55 @@ function SewingScreen() {
     <View><Text style={styles.Text6}> </Text></View>  */}
     
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/forest.jpg')}
+            source={require('../assets/img/Sewing/handsewing.jpg')}
             resizeMode="cover"
             /> 
     <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText2}>indigenous and exotic plants and trees</Text>
+        <Text style={styles.btnText2}>Types of stitches</Text>
        </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/garden.jpg')}
+            source={require('../assets/img/Sewing/sewingkit.jpg')}
             resizeMode="cover"
             />
     <TouchableOpacity>
       <View style={styles.button6}>
         <Text style={styles.btnText3}>
-        Balancing of plant and trees in a garden</Text>
+        Sewing buttons, zips, hems and seams</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/pavement.jpg')}
+            source={require('../assets/img/Sewing/sewingmachine.jpg')}
             resizeMode="cover"
             />
             <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Fixed structures (fountains, statues, benches, tables, built-in braai)</Text>
+        <Text style={styles.btnText3}>Threading a sewing machine</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/skills.jpg')}
+            source={require('../assets/img/Sewing/measuringtape.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Aesthetics of plant shapes and colours
-
-</Text>
+        <Text style={styles.btnText3}>Designing and sewing new garments</Text>
       </View>
     </TouchableOpacity>
   
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/stream.jpg')}
+            source={require('../assets/img/Sewing/woolkit.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Garden layout</Text>
+        <Text style={styles.btnText3}>
+Alterations</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background5} 
-            source={require('../assets/img/Landscaping/nature.jpg')}
+            source={require('../assets/img/Sewing/sewing-machine-.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
@@ -387,7 +386,7 @@ function SewingScreen() {
       alignItems:'center',
       borderRadius: 35,
       marginBottom:5,
-      marginLeft:250,
+      marginLeft:150,
       marginTop: -150,
     },
 

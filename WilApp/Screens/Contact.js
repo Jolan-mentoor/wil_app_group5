@@ -12,31 +12,32 @@ function ContactScreen() {
           /> }
     <View style={[styles.background, styles.overflow]} />
   <View style={styles.content}>
-  <View><Text style={styles.title2}>Book your{'\n'}Course now!!!</Text></View>
-  <View><Text style={styles.Text13}>Choose your Course:</Text></View>
-    {/* <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View> */}
-  {/* <View><Text style={styles.Text5}></Text></View> 
-  <View><Text style={styles.Text6}> </Text></View>  */}
+  <View><Text style={styles.title2}>Contact{'\n'}Us</Text></View>
+  <View><Text style={styles.Text14}>Contact Number: 084 7589 489</Text></View>
+  <View><Text style={styles.Text14}>Email Address:  empoweringthenation@gmail.com</Text></View>
+  <View><Text style={styles.Text14}>Physical Address1: 2nd Avenue, Newton Park,Gqeberha</Text></View>
+  <View><Text style={styles.Text14}>Physical Address2: 2nd Avenue, Newton Park,Gqeberha</Text></View>
   
+   
   <Image style={styles.background2} 
-          source={require('../assets/img/firstaid/firstaid.jpg')}
+          source={require('../assets/map.png')}
           resizeMode="cover"
           /> 
-  <TouchableOpacity>
+  {/* <TouchableOpacity>
     <View style={styles.button2}>
       <Text style={styles.btnText2}>First Aid</Text>
      </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
-          source={require('../assets/img/learning.jpg')}
+  </TouchableOpacity> */}
+  <Image style={styles.background8} 
+          source={require('../assets/map.png')}
           resizeMode="cover"
           />
-  <TouchableOpacity>
+  {/* <TouchableOpacity>
     <View style={styles.button3}>
       <Text style={styles.btnText3}>Life Skills</Text>
     </View>
-  </TouchableOpacity>
-  <Image style={styles.background3} 
+  </TouchableOpacity> */}
+  {/* <Image style={styles.background3} 
           source={require('../assets/img/sewing.png')}
           resizeMode="cover"
           />
@@ -82,7 +83,7 @@ function ContactScreen() {
       <Text style={styles.btnText3}>Cooking</Text>
     </View>
   </TouchableOpacity>
-        
+         */}
   </View>
   
   
@@ -109,9 +110,10 @@ function ContactScreen() {
       left: 0,
       width:150,
       height:125,
-      borderRadius:100,
+      borderRadius:0,
       marginBottom:50,
       marginTop:-60,
+      marginLeft:10,
     },
   
     background3:{
@@ -122,7 +124,20 @@ function ContactScreen() {
       borderRadius:100,
       marginBottom:50,
     },
-  //IIE,2023//
+
+    background8:{
+      top: 0,
+      left: 0,
+      width:150,
+      height:125,
+      borderRadius:0,
+      marginBottom:50,
+      marginLeft:210,
+      marginTop:-170,
+    },
+  
+  //pexel,2023//
+  // IIE,2023//
     overflow:{
       backgroundColor: 'rgba(0,0,0,0.5)',
     },
@@ -293,6 +308,17 @@ function ContactScreen() {
         marginTop: -70,
       padding: 5,
       marginLeft:15,
+      textAlign:'center',
+  
+    },
+
+    Text14:{
+      fontSize: 20,
+      color:'#CEA792',
+       marginBottom: 125,
+        marginTop: -40,
+      padding: 5,
+      marginLeft:25,
       textAlign:'center',
   
     },

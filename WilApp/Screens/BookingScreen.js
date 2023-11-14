@@ -286,8 +286,8 @@ function BookingScreen() {
   
     },
 
-    Text13:{
-      fontSize: 25,
+    Text1:{
+      fontSize: 16,
       color:'#CEA792',
        marginBottom: 125,
         marginTop: -70,

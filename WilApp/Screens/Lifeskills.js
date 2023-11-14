@@ -12,63 +12,65 @@ function LifeskillsScreen() {
             /> }
       <View style={[styles.background, styles.overflow]} />
     <View style={styles.content}>
-    <View><Text style={styles.title2}>Our{'\n'}Land scaping{'\n'}Course</Text></View>
-    <View><Text style={styles.Text14}>This course provide landscaping services for new and established gardens:</Text></View>
+    <View><Text style={styles.title2}>Our{'\n'}Lifeskills{'\n'}Course</Text></View>
+    <View><Text style={styles.Text14}>This course provide basic child and baby care that include:</Text></View>
       {/* <View><Text style={styles.Text9}>Whether you're enhancing your career or pursuing a passion, our courses provide a structured path to success. Join us for six months of immersive education, expert guidance, and a step towards realizing your goals.</Text></View> */}
     {/* <View><Text style={styles.Text5}></Text></View> 
     <View><Text style={styles.Text6}> </Text></View>  */}
     
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/forest.jpg')}
+            source={require('../assets/img/Lifeskills/man.jpg')}
             resizeMode="cover"
             /> 
     <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText2}>indigenous and exotic plants and trees</Text>
+        <Text style={styles.btnText2}>Basic labour law (know your rights)
+
+</Text>
        </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/garden.jpg')}
+            source={require('../assets/img/Lifeskills/accounting.jpg')}
             resizeMode="cover"
             />
     <TouchableOpacity>
       <View style={styles.button6}>
         <Text style={styles.btnText3}>
-        Balancing of plant and trees in a garden</Text>
+        Basic numeric literacy</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/pavement.jpg')}
+            source={require('../assets/img/Lifeskills/a-book.jpg')}
             resizeMode="cover"
             />
             <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Fixed structures (fountains, statues, benches, tables, built-in braai)</Text>
+        <Text style={styles.btnText3}>Basic reading and writing literacy</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/skills.jpg')}
+            source={require('../assets/img/Lifeskills/tax.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Aesthetics of plant shapes and colours
+        <Text style={styles.btnText3}>Opening a bank account
 
 </Text>
       </View>
     </TouchableOpacity>
   
     <Image style={styles.background4} 
-            source={require('../assets/img/Landscaping/stream.jpg')}
+            source={require('../assets/img/Lifeskills/coins.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
       <View style={styles.button6}>
-        <Text style={styles.btnText3}>Garden layout</Text>
+        <Text style={styles.btnText3}>Saving</Text>
       </View>
     </TouchableOpacity>
     <Image style={styles.background5} 
-            source={require('../assets/img/Landscaping/nature.jpg')}
+            source={require('../assets/img/learning.jpg')}
             resizeMode="cover"
             />
              <TouchableOpacity>
@@ -387,7 +389,7 @@ function LifeskillsScreen() {
       alignItems:'center',
       borderRadius: 35,
       marginBottom:5,
-      marginLeft:250,
+      marginLeft:150,
       marginTop: -150,
     },
 

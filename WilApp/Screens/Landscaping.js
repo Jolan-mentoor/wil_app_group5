@@ -387,7 +387,7 @@ function LandscapingScreen() {
       alignItems:'center',
       borderRadius: 35,
       marginBottom:5,
-      marginLeft:250,
+      marginLeft:150,
       marginTop: -150,
     },
 
