@@ -31,7 +31,7 @@ export default function App() {
           <Text style={styles.text}>Cooking</Text>
 
           <Image
-            source={require(' ')} // Replace with the actual path to your image
+            source={require('WilApp/assets/img/cooking.jpg')} // Replace with the actual path to your image
             style={styles.image}
           />
                     <TouchableOpacity onPress={handleReadMore}>
@@ -93,17 +93,17 @@ const styles = StyleSheet.create({
 
   btnText: {
     fontSize: 24,
-    color: '#C8A2C8',
-    fontWeight: '700',
+    color:'#D5b195',
+    fontWeight:'500',
   },
 
   button: {
-    padding: 16,
-    backgroundColor: 'black',
-    alignItems: 'center',
-    borderRadius: 12,
-    marginTop: 20,
-    marginBottom: 20,
+    padding:16,
+    backgroundColor:'#765341',
+    alignItems:'center',
+    borderRadius: 35,
+     marginBottom:20,
+    marginLeft:110,
   },
 
 
